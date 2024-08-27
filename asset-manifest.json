@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.9248ce98.css",
-    "main.js": "/portfolio/static/js/main.63a73cc9.js",
+    "main.css": "/portfolio/static/css/main.a64933a2.css",
+    "main.js": "/portfolio/static/js/main.73b57135.js",
     "static/media/abhishek_dp.jpg": "/portfolio/static/media/abhishek_dp.a2f0970d1507b34ec7e4.jpg",
     "static/media/ninjacrm_v2.png": "/portfolio/static/media/ninjacrm_v2.571f4d405045862fdad4.png",
     "index.html": "/portfolio/index.html",
-    "main.9248ce98.css.map": "/portfolio/static/css/main.9248ce98.css.map",
-    "main.63a73cc9.js.map": "/portfolio/static/js/main.63a73cc9.js.map"
+    "main.a64933a2.css.map": "/portfolio/static/css/main.a64933a2.css.map",
+    "main.73b57135.js.map": "/portfolio/static/js/main.73b57135.js.map"
   },
   "entrypoints": [
-    "static/css/main.9248ce98.css",
-    "static/js/main.63a73cc9.js"
+    "static/css/main.a64933a2.css",
+    "static/js/main.73b57135.js"
   ]
 }
