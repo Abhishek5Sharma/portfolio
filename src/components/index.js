@@ -6,5 +6,6 @@ import Experience from "./experience/Experience";
 import Footer from "./footer/Footer";
 import TextChanger from "./TextChanger";
 import AnimateOnScroll from "./AnimateOnScroll";
+import Resume from "./resume/Resume";
 
-export {Home, Navbar, About, Projects, Experience, Footer, TextChanger, AnimateOnScroll}
+export {Home, Navbar, About, Projects, Experience, Footer, TextChanger, AnimateOnScroll, Resume}

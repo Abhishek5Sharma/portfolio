@@ -5,7 +5,7 @@ import AnimateOnScroll from '../AnimateOnScroll';
 
 function Home() {
   return (
-    <div className='text-white flex md:flex-row flex-col gap-y-8 w-full md:justify-between md:items-start p-10 md:p-20'>
+    <div id='Home' className='text-white flex md:flex-row flex-col gap-y-8 w-full md:justify-between md:items-start p-10 md:p-20'>
       <div className='md:w-3/4 md:pt-10 order-2 md:order-1'>
       <AnimateOnScroll type={'fade-up'} duration={2000}>
         <h1 className='text-2xl md:text-6xl flex flex-wrap font-bold leading-normal tracking-tighter'>
