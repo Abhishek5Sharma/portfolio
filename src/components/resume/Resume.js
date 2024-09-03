@@ -35,10 +35,12 @@ function Resume({isOpen, onClose}) {
         <div ref={popupRef} className='bg-white p-2 rounded-lg shadow-lg md:h-3/4 w-3/4 md:w-1/2'>
             <div className='flex justify-between items-center'>
                 <h2 className='text-xl font-semibold'>Resume</h2>
-                <div className='flex gap-4'>
-                    <button onClick={handleDownload}>
-                        {isDownload?<MdFileDownloadDone size={25}/>:<MdFileDownload size={25}/>}
-                    </button>
+                <div className='flex gap-4'>                    
+                    {
+                      isDownload ?
+                        <MdFileDownloadDone size={25}/> :
+                        <button onClick={handleDownload}><MdFileDownload size={25}/></button>
+                    }
                     <button onClick={()=>{setIsDownload(false);onClose()}}><MdOutlineClose size={25}/></button>
                 </div>
             </div>  
