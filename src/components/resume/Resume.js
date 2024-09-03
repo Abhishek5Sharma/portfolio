@@ -24,7 +24,7 @@ function Resume({isOpen, onClose}) {
 
     const handleDownload = () => {
         const link = document.createElement('a')
-        link.href = '/Resume.pdf'
+        link.href = './Resume.pdf'
         link.download = 'abhishek_resume.pdf'
         link.click()
         setIsDownload((download)=>!download)
