@@ -1,6 +1,6 @@
 import React, {useState, useEffect, useRef, useCallback} from 'react'
 import { MdOutlineClose, MdFileDownload, MdFileDownloadDone } from "react-icons/md";
-import Resume1 from './Resume.pdf'
+import Resume1 from '../../assets/Resume.pdf'
 
 function Resume({isOpen, onClose}) {
     const popupRef = useRef();
@@ -24,7 +24,7 @@ function Resume({isOpen, onClose}) {
 
     const handleDownload = () => {
         const link = document.createElement('a')
-        link.href = './Resume.pdf'
+        link.href = '../../assets/Resume.pdf'
         link.download = 'abhishek_resume.pdf'
         link.click()
         setIsDownload((download)=>!download)

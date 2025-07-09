@@ -11,7 +11,7 @@ function ProjectCard({title, value}) {
               <h4 className='text-m md:text-l'>{value.client}</h4>
             </span>
           </div>
-          <p className='pt-2 pl-2 text-sm tracking-tight'>{value.tech}</p>
+          <p className='pt-2 pl-2 text-sm tracking-tight'><span className='font-bold text-lg'>Tech Stack :</span> {value.tech}</p>
           <p className='m-2 text-sm md:text-md leading-tight flex flex-col flex-wrap overflow-hidden gap-y-2'>
             {value.main.map((item,index)=>(<li key={index}>{item}</li>))}            
           </p>

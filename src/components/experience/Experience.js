@@ -2,9 +2,13 @@ import React from 'react'
 import {FaHtml5, FaCss3, FaJs, FaReact, FaGolang, FaGit, FaGithub, FaPhp, FaLaravel, FaPython} from 'react-icons/fa6'
 import { SiMysql, SiPostman } from "react-icons/si";
 import { DiRedis } from "react-icons/di";
-import SwordLogo from '../../images/ssntpl_logo.png';
+import SwordLogo from '../../assets/images/ssntpl_logo.png';
 import Icon from './Icon';
-import AnimateOnScroll from '../AnimateOnScroll'
+import AnimateOnScroll from '../AnimateOnScroll';
+import dayjs from "dayjs";
+
+const startDate = dayjs("2022-09-01");
+const endDate = dayjs();
 
 const skills = new Map([
   ['HTML5', <FaHtml5 size={50}  color='#61DBFB'/>],
@@ -24,12 +28,17 @@ const skills = new Map([
 
 
 function Experience() {
+  const totalMonths = endDate.diff(startDate, 'month');
+  const years = Math.floor(totalMonths / 12);
+  const months = totalMonths % 12;
+  const exp = `${years} year${years !== 1 ? 's' : ''} ${months} month${months !== 1 ? 's' : ''}`;
+
   return (
     <div id='Experience' className='p-10 md:p-24'>
       <AnimateOnScroll type={'fade-up'}>
       <div className='flex justify-between'>
         <h1 className='text-2xl md:text-4xl text-white font-bold'>Experience</h1>
-        <h1 className='text-l md:text-xl text-white'>Total&nbsp;&nbsp;2+ years</h1>
+        <h1 className='text-l md:text-xl text-white'>Total:&nbsp;&nbsp;{exp}</h1>
       </div>
       </AnimateOnScroll>
       <div className='flex flex-wrap items-center justify-around'>

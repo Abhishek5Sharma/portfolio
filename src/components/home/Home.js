@@ -1,6 +1,6 @@
 import React from 'react'
 import TextChanger from '../TextChanger'
-import ProfilePic from '../../images/abhishek_dp.jpg';
+import ProfilePic from '../../assets/images/abhishek_dp.jpg';
 import AnimateOnScroll from '../AnimateOnScroll';
 
 function Home() {
